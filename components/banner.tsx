@@ -19,7 +19,7 @@ const bannerVariants = cva(
 )
 
 interface BannerProps extends VariantProps<typeof bannerVariants> {
-  label: JSX.Element
+  label: string
 }
 
 const iconMap = {
@@ -29,6 +29,7 @@ const iconMap = {
 
 export const Banner = ({ label, variant }: BannerProps) => {
   const Icon = iconMap[variant || "warning"]
+
   return (
     <div className={cn(bannerVariants({ variant }))}>
       <Icon className="h-4 w-4 mr-2" />
