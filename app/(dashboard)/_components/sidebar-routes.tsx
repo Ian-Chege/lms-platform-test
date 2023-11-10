@@ -1,20 +1,49 @@
 "use client"
 
 import { usePathname } from "next/navigation"
-import { BarChart, Compass, Layout, List } from "lucide-react"
+import {
+  Home,
+  Library,
+  Medal,
+  Banknote,
+  UserCircle2,
+  ShieldCheck,
+  List,
+  BarChart,
+} from "lucide-react"
 
 import { SidebarItem } from "./sidebar-item"
 
 const guestRoutes = [
   {
-    icon: Layout,
-    label: "Dashboard",
+    icon: Home,
+    label: "Home",
     href: "/",
   },
   {
-    icon: Compass,
-    label: "Browse",
+    icon: Library,
+    label: "Courses",
     href: "/search",
+  },
+  {
+    icon: Medal,
+    label: "Certificates",
+    href: "/certificates",
+  },
+  {
+    icon: Banknote,
+    label: "Payments",
+    href: "/payments",
+  },
+  {
+    icon: UserCircle2,
+    label: "My Account",
+    href: "/my-account",
+  },
+  {
+    icon: ShieldCheck,
+    label: "Safety Center",
+    href: "/safety-center",
   },
 ]
 
