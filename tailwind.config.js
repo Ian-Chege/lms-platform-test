@@ -21,6 +21,7 @@ module.exports = withUt({
       colors: {
         'green-gray': '#4A5759',
         'navy-blue': '#0A033C',
+        'lightBlue': '#E1EAFF',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -11,6 +11,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
         <Sidebar />
       </div>
       <main className="md:pl-56 pt-[80px] h-full">{children}</main>
+      {/* bg-lightBlue */}
     </div>
   )
 }
