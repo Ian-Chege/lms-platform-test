@@ -1,5 +1,6 @@
 import { ClerkProvider } from "@clerk/nextjs"
 import type { Metadata } from "next"
+import { Analytics } from "@vercel/analytics/react"
 import { Poppins } from "next/font/google"
 
 import { ToastProvider } from "@/components/providers/toaster-provider"
@@ -33,6 +34,7 @@ export default function RootLayout({
           <ConfettiProvider />
           <ToastProvider />
           {children}
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
